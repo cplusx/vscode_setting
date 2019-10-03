@@ -1,0 +1,48 @@
+// Place your key bindings in this file to override the defaults
+[
+    {
+        "key": "alt+b",
+        "command": "cursorWordLeft",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "alt+f",
+        "command": "cursorWordRight",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "alt+d",
+        "command": "deleteWordRight",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "shift+alt+f",
+        "command": "cursorWordRightSelect",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "shift+alt+b",
+        "command": "cursorWordLeftSelect",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "ctrl+a",
+        "command": "cursorHome",
+        "when": "editorTextFocus && vim.active && vim.use<C-a> && !inDebugRepl&&vim.mode=='Insert'"
+    },
+    {
+        "key": "ctrl+e",
+        "command": "cursorEnd",
+        "when": "editorTextFocus && vim.active && vim.use<C-e> && !inDebugRepl&&vim.mode=='Insert'"
+    },
+    {
+        "key": "ctrl+d",
+        "command": "deleteRight",
+        "when": "editorTextFocus && vim.active && vim.use<C-e> && !inDebugRepl&&vim.mode=='Insert'"
+    },
+    {
+        "key": "ctrl+t",
+        "command": "editor.action.transposeLetters",
+        "when": "editorTextFocus && vim.active && vim.use<C-e> && !inDebugRepl&&vim.mode=='Insert'"
+    },
+]
