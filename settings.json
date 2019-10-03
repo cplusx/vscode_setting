@@ -1,0 +1,68 @@
+{
+    "vim.easymotion": true,
+    "vim.sneak": true,
+    "vim.incsearch": true,
+    "vim.useSystemClipboard": true,
+    "vim.useCtrlKeys": true,
+    "vim.hlsearch": true,
+    "vim.insertModeKeyBindings": [
+        {
+            "before": ["j", "j"],
+            "after": ["<Esc>"]
+        },
+        {
+            "before": ["<tab>"],
+            "after": ["g", "t"]
+        },
+    ],
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": ["<leader>", "d"],
+            "after": ["d", "d"]
+        },
+        {
+            "before": ["<leader>", "c"],
+            "after": ["z", "c"]
+        },
+        {
+            "before": ["<leader>", "o"],
+            "after": ["z", "o"]
+        },
+        {
+            "before": ["<C-n>"],
+            "commands": [":nohl"]
+        },
+        {
+            "before": ["j"],
+            "after": ["g", "j"]
+        },
+        {
+            "before": ["k"],
+            "after": ["g", "k"]
+        },
+        {
+            "before": ["<tab>"],
+            "after": ["g", "t"]
+        },
+    ],
+    "vim.leader": "<space>",
+    "vim.handleKeys": {
+      "<C-f>": false,
+      "<C-b>": false,
+      "<C-h>": false,
+      "<C-k>": false,
+      "<C-n>": false,
+    },
+    "git.ignoreLegacyWarning": true,
+    "editor.minimap.enabled": false,
+    "python.dataScience.askForKernelRestart": false,
+    "python.dataScience.sendSelectionToInteractiveWindow": true,
+    "python.linting.pylintArgs": [
+        "--errors-only",
+        "--generated-members=numpy.* ,torch.* ,cv2.* , cv.*"
+    ],
+    "workbench.startupEditor": "welcomePage",
+    "window.zoomLevel": 1,
+    "terminal.integrated.rendererType": "dom",
+    "explorer.confirmDragAndDrop": false
+}
