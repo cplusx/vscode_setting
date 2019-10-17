@@ -17,8 +17,10 @@
     ],
     "vim.normalModeKeyBindingsNonRecursive": [
         {
-            "before": ["<leader>", "d"],
-            "after": ["d", "d"]
+            "before": ["<leader>", "<space>"],
+            "commands": [
+                "editor.toggleFold"
+            ]
         },
         {
             "before": ["<leader>", "c"],
@@ -64,5 +66,6 @@
     "workbench.startupEditor": "welcomePage",
     "window.zoomLevel": 1,
     "terminal.integrated.rendererType": "dom",
-    "explorer.confirmDragAndDrop": false
+    "explorer.confirmDragAndDrop": false,
+    "terminal.integrated.inheritEnv": false
 }
